@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezerwacja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c09818cd34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav id="mainMenu" class="mainmenu">
+        <div class="menu">
+            <div class="logo"></div>
+
+            <div class="nav-list" id="navList">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Kampery.html">Kampery</a></li>
+                    <li><a href="Blog.html">Blog</a> </li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="Rezerwacja.html">Rezerwacja</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="socialicon">
+            <a href="https://www.facebook.com/Kamperem-w-drodze-103462818475664" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kamperemwdrodze/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+
+    <!-- ---- hero baner ---- -->
+
+    <header id="booking">
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="header-col">
+                    <h2>Zrób <span>rezerwację</span> już teraz</h2>
+                    <p>Nasze kampery są gotowe do drogi. Zarezerwuj je już dziś.
+                        Wyrusz z nami w drogę.</p>
+                    <button class="solid-btn">Kontakt</button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---- booking ----- -->
+
+    <section class="booking-detail">
+        <div class="container">
+
+            <div class="advanced-heading">
+                <h2 class="heading-decoration">Rezerwacja</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-2 left">
+                    <i class="fab fa-angellist"></i>
+                    <h2>Pamiętaj!</h2>
+                    <p>Dla ułatwienia procesu rezerwacji skorzystaj z poniższego formularza. Pamiętaj by podać wszystkie
+                        niezbędne dane i informacje, które ułatwią proces rezerwacji.
+                        Możesz również wysłać do nas bezpośrednią wiadomość na adres:
+                    </p>
+                    <a href="mailto:hello@kamperemwdrodze.pl">hello@kamperemwdrodze.pl</a>
+
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li>W formularzu kontaktowym podaj wszystkie niezbędne dane</li>
+                        <li>Po otrzymaniu wiadomości zarezerwujemy wstępny termin na Twój wyjazd</li>
+                        <li>Wstępną rezerwację prześlemy e-mailem. Udzielimy informacji o pełnym koszcie wynajmu,
+                            wymaganej kwocie zadatku oraz terminach płatności.</li>
+                        <li>Po potwierdzeniu warunków rezerwacji dokonaj płatności zadatku, który wynosi 30% całej
+                            rezerwacji. Zagwarantuje Ci to wstępną rezerwację we wskazanym terminie.</li>
+                        <li>Po podpisaniu umowy dokonaj płatności za cały okres najmu.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-form">
+        <div class="container-booking">
+            <div class="row">
+
+                <form action="mailto:hello@kamperemwdrodze.pl" id="contact-form-1" method="post">
+
+                    <label for="fname">Imię i nazwisko<span>*</span></label>
+                    <div class="bookname">
+                        <input required type="text" id="fname" name="firstname" placeholder="Imię">
+                        <input required type="text" id="fname" name="firstname" placeholder="Nazwisko">
+                    </div>
+
+                    <label for="start">Data wynajmu:<span>*</span></label>
+                    <div class="date">
+                        <input required  type="date" id="start" name="trip-start" min="2021-01-01" max="2025-12-31">
+                        <input required  type="date" id="end"  name="trip-end" min="2021-01-01" max="2025-12-31">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Email<span>*</span></label>
+                        <input  required  type="email" name="email" id="email" title="E-mail" placeholder="Email">
+
+                        <label for="subject">Temat<span>*</span></label>
+                        <textarea required  name="subject" id="subject"  placeholder="Temat"></textarea>
+
+                        <label for="field-message">Message<span>*</span></label>
+                        <textarea required  name="message" id="field-message"  placeholder="Wiadmość"></textarea>
+                    </div>
+
+                    <div class="checkbox">
+                        <h4>Dodatkowe płatne opcje</h4>
+                        <input type="checkbox" id="1" name="1" value="1">
+                        <label for="1"> Podstawienie kampera na życzenie do wskazanej lokalizacji</label><br>
+
+                        <input type="checkbox" id="2" name="2" value="2">
+                        <label for="2"> Zestaw mebli turystycznych (stół + 6 rozkładanych krzeseł Berger)</label><br>
+
+                        <input type="checkbox" id="3" name="3" value="3">
+                        <label for="3"> Podłoga rozkładana Berger</label><br>
+
+                        <input type="checkbox" id="4" name="4" value="4">
+                        <label for="4"> Kuchenka gazowa zewnętrzna + szafka Berger</label><br>
+
+                        <input type="checkbox" id="5" name="5" value="5">
+                        <label for="5"> Przedsionek do markizy</label><br>
+
+                        <input type="checkbox" id="6" name="6" value="6">
+                        <label for="6"> Ekspres do kawy</label><br>
+                        <input type="checkbox" id="7" name="7" value="7">
+                        <label for="7"> Namiot 4 osobowy Berger</label><br>
+                        <input type="checkbox" id="8" name="8" value="8">
+                        <label for="8"> Suszarka rozkładana na pranie</label><br>
+                        <input type="checkbox" id="9" name="9" value="9">
+                        <label for="9"> Śpiwór Berger</label><br/>
+
+                        <h4>RODO<span>*</span></h4>
+                        <input required type="checkbox" id="10" name="10" value="10">
+                        <label for="10"> Zgadzam się</label><br/>
+                        <p>W celu wysłania wiadomości niezbędna jest zgoda na przetwarzanie danych. Szczegóły znajdziesz w polityce prywatności</p>
+                        <form action="*">
+                        <input type="submit" value="Wyślij"></form>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="info-box">
+        <div class="container">
+            <div class="advanced-heading">
+                <h2>Jest wiele powodów, dla których <span>już dziś</span> warto<br />zarezerwować kampera</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/kamperem-w-drodze-img-box-1.jpg" class="img-size" alt="wolnosc">
+                    <h4>Wolność</h4>
+                    <p>Możesz być gdzie chcesz i zmieniać widok za oknem codziennie</p>
+                </div>
+                <div class="col-3">
+                    <img src="img/kamperem-w-drodze-img-box-6.jpg" class="img-size" alt="kamperowa pogoda">
+                    <h4>Pogoda nie ma znaczenia</h4>
+                    <p>Nasze kampery mają całoroczne ogrzewanie, więc żadna pogoda nie przeszkodzi w podróżowaniu</p>
+                </div>
+                <div class="col-3">
+                    <img src="img/kamperem-w-drodze-img-box.jpg" class="img-size" alt="ulotne chwile">
+                    <h4>Ulotne chwile</h4>
+                    <p>Ciesz się chwilami spędzonymi z rodziną i przyjaciółmi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ----- footer 1st row ------ -->
+
+    <div class="separator">
+        <div class="custom-shape-divider-top-1638536151">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <section class="footer-top-row">
+        <div class="container">
+            <div class="footer-row">
+
+                <div class="footer-left-col">
+                    <img src="img/logo-kamper-transparent.svg" class="logo-footer" alt="">
+                </div>
+
+                <div class="footer-right-col">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact">
+                            <h4>Tel.</h4>
+                            <p>+48 512 433 433</p>
+                        </div>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact">
+                            <h4>Email</h4>
+                            <p>hello@kamperemwdrodze.pl</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2021 Kamperem w drodze | Polityka Prywatności | Wdrożenie <a
+                    href="https://wiolipcreates.pl/">
+                    WiolipCreates</a></p>
+        </div>
+        <div class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
+
+
+
+
+    <!-- ----- java -----  -->
+
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <script>
+        var navList = document.getElementById('navList');
+
+        function showMenu() {
+            navList.style.right = "0";
+        }
+
+        function hideMenu() {
+            navList.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+
+</html>

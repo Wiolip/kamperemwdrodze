@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta wynajem kamperów</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c09818cd34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav id="mainMenu" class="mainmenu">
+        <div class="menu">
+            <div class="logo"></div>
+
+            <div class="nav-list" id="navList">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Kampery.html">Kampery</a></li>
+                    <li><a href="Blog.html">Blog</a> </li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="Rezerwacja.html">Rezerwacja</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="socialicon">
+            <a href="https://www.facebook.com/Kamperem-w-drodze-103462818475664" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kamperemwdrodze/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+
+    <!-- ---- hero baner ---- -->
+
+    <header id="offer">
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="header-col">
+                    <h2>Zapoznaj się z
+                        naszą<span> ofertą</span></h2>
+                    <p>I zrób rezerwację na najbliższy wyjazd</p>
+                    <button class="solid-btn">Rezerwacja</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ---- features offer ------ -->
+
+    <section class="container">
+        <div class="advanced-heading ">
+            <h2 class="heading-decoration">Poznaj szczegóły naszej oferty</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <div class="title-items">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Wydanie kampera</h3>
+                </div>
+
+                <div class="offerlist">
+                    <un>
+                        <li>Ubezpieczenie OC/AC/NW + Assistance</li>
+                        <li>Pełny zbiornik paliwa</li>
+                        <li>Pełna butla z gazem</li>
+                        <li>Uzupełnione płyny eksploatacyjne</li>
+                        <li>Pełny zbiornik z czystą wodą</li>
+                        <li>Wyczyszczony wewnątrz i na zewnątrz</li>
+                        <li>Sprawdzony stan techniczny</li>
+                        <li>Zdezynfekowany</li>
+                    </un>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="title-items">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Zwrot kampera</h3>
+                </div>
+
+                <div class="offerlist">
+                    <un>
+                        <li>Wyczyszczony wewnątrz i na zewnątrz</li>
+                        <li>Pełny zbiornik paliwa</li>
+                        <li>Pełna butla z gazem</li>
+                        <li>Opróżnione zbiorniki wody oraz kaseta WC</li>
+                        <li>Pełny zbiornik z czystą wodą</li>
+                        <li>Uzupełniony płyn do spryskiwaczy</li>
+                    </un>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-2">
+                <div class="title-items">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Ogólne warunki wynajmu</h3>
+                </div>
+
+                <div class="offerlist">
+                    <un>
+                        <li>Wynajem – min 4 doby</li>
+                        <li>Brak opłaty serwisowej przy wynajmie powyżej 7 dni</li>
+                        <li>Brak limitu kilometrów</li>
+                        <li>Wymagane dokumenty: aktualne prawo jazdy, dowód osobisty (paszport w przypadku obcokrajowca
+                        </li>
+                        <li>Opłata rezerwacyjna wynosi 30% wartości najmu </li>
+                        <li>Wydanie kampera następuje po wpłaceniu całkowitej należności</li>
+                        <li>Kaucja zwrotna w kwocie 6000 PLN rozliczana do 14 dni</li>
+                        <li>Wymagany wiek kierowcy: 26 lat, prawo jazdy min. 5 lat</li>
+                    </un>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="title-items">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Opłata serwisowa</h3>
+
+                </div>
+
+                <div class="offerlist">
+                    <un>
+                        <li>Przegląd techniczny pojazdu</li>
+                        <li>Ozonowanie pojazdu Uzupełnienie płynów eksploatacyjnych kampera</li>
+                        <li>Napełnienie zbiornika z wodą/opróżnienie zbiornika na wodę szarą</li>
+                        <li>Chemia specjalistyczna: płyn do czyszczenia toalety, płyn do armatury łazienkowej, kapsułki
+                            do toalety chemicznej
+                        </li>
+                        <li>Papier do toalety chemicznej – 4 rolki </li>
+                        <li>Wydanie kampera następuje po wpłaceniu całkowitej należności</li>
+                        <li>Instruktaż dotyczący obsługi kampera</li>
+                    </un>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <div class="title-items">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Wyposażenie w cenie najmu</h3>
+                </div>
+
+                <div class="offerlist">
+                    <un>
+                        <li>Wyposażenie kuchni i jadalni (garnki, talerze, patelnie, przybory kuchenne, otwieracze,
+                            wiadro do mycia naczyń itp, kawiarka)</li>
+                        <li>Zestaw pościeli i ręczników</li>
+                        <li>Koce i poduszki</li>
+                        <li>Bagażnik rowerowy i pokrowiec na rowery
+                        </li>
+                        <li>Najazdy (kliny poziomujące) </li>
+                        <li>Zestaw przyłączy, przedłużacz 100 m</li>
+                        <li>Markizai</li>
+                        <li>Apteczka, Gaśnica</li>
+                        <li>Klimatyzacja postojowa – opcja chłodzenia oraz dogrzewania</li>
+                        <li>Telewizor</li>
+                        <li>Dodatkowo zapewniamy możliwość zostawienia samochodu na zamkniętym parkingu</li>
+
+                    </un>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="title-items">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Wyposażenie dodatkowo płatne</h3>
+
+                </div>
+
+                <div class="offerlist">
+                    <un>
+                        <li>Zestaw mebli turystycznych (stół + 6 rozkładanych krzeseł Berger) – 290 PLN</li>
+                        <li>Suszarka rozkładana na pranie – 90 PLN</li>
+                        <li>Podłoga rozkładana Berger – 90 PLN</li>
+                        <li>CEkspres do kawy – 100 PLN
+                        </li>
+                        <li>PKuchenka gazowa zewnętrzna + szafka Berger – 390 PLN </li>
+                        <li>Namiot 4 osobowy Berger – 80 PLN</li>
+                        <li>IŚpiwór Berger – 40 PLN</li>
+                        <li>Przedsionek do markizy – 290 PLN</li>
+                    </un>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <div class="title-items">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Wydanie kampera</h3>
+                </div>
+
+                <div class="offerlist">
+                    <un>
+                        <li>Podstawienie kampera na życzenie do wskazanej lokalizacji – koszt ustalany indywidualnie
+                        </li>
+                        <li>Kompleksowe sprzątanie kampera, opróżnianie kaset WC i szarej wody – 1000,00 PLN</li>
+                        <li>Koszt prania tapicerki (fotel – 70 PLN, kanapa -120 PLN</li>
+                        <li>Napełnienie butli gazowej – 3,00 zł netto za dm 3</li>
+                        <li>Uzupełnienie brakującego paliwa – nie więcej niż 6,10 zł netto za litr</li>
+                    </un>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <img src="img/oferta-kamperem-w-drodze.jpeg" class="img-size" alt="kamperem-oferta">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----- prices ------- -->
+
+    <section class="fixed-bcg-price">
+
+        <div class="container">
+            <div class="advanced-heading">
+                <h2 class="heading-decoration">Cennik</h2>
+                <p>Ceny podane poniżej są cenami brutto. Końcowa cena wynajmu kampera uzależniona będzie od sezonu,
+                    długości wyjazdu, opcji dodatkowych wyposażenia i modelu kampera</p>
+            </div>
+
+            <div class="row">
+
+                <div class="price-list-col">
+                    <h3>Najlepsza cena</h3>
+                    <h4>Sezon średni </h4>
+                    <p class="price">PLN <span class="big-font">640</span> /24H </p>
+                    <p class="season-price">kwiecień, maj (poza 1-5), wrzesień-grudzień</p>
+                    <ul>
+                        <li>Bez limitu km</li>
+                        <li>Wynajem min. 4 doby </li>
+                        <li>Kaucja zwrotna 6000 PLN</li>
+                        <li>Opłata serwisowa 300 PLN<br>(brak opł. przy min 7 dobach)</li>
+                        <li>5% rabatu – wynajem od 14 dni</li>
+                        <li>10% rabatu – wynajem od 21 dni</li>
+                    </ul>
+                    <button class="outline-btn-price">Rezerwacja</button>
+                </div>
+
+                <div class="price-list-col">
+                    <h3>Najpopularniejsze</h3>
+                    <h4>Sezon wysoki </h4>
+                    <p class="price">PLN <span class="big-font">730</span> /24H </p>
+                    <p class="season-price">Wielkanoc, Majówka, Boże Ciało, czerwiec-sierpień, okres Bożego Narodzenia i
+                        Nowy Rok, ferie zimowe (styczeń-luty)ń</p>
+                    <ul>
+                        <li>Bez limitu km</li>
+                        <li>Wynajem min. 7 dób </li>
+                        <li>Kaucja zwrotna 6000 PLN </li>
+                        <li>Opłata serwisowa 0 PLN</li>
+                        <li>5% rabatu – wynajem od 14 dni</li>
+                        <li>10% rabatu – wynajem od 21 dni</li>
+                    </ul>
+                    <button class="outline-btn-price">Rezerwacja</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ---- FAQ ------ -->
+
+    <section class="faq">
+        <div class="container">
+            <div class="advanced-heading">
+                <h2 class="heading-decoration">FAQ</h2>
+                <p>Najczęściej zadawane pytania</p>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button class="accordion">
+                        Jakie prawo jazdy jest wymagane?</button>
+                    <div class="panel">
+                        <p>Do prowadzenia kampera wystarczające jest prawo jazdy kat. B pod warunkiem, że DCM
+                            (Dopuszczalna Masa Całkowita) pojazdu nie przekracza 3,5 t. Dodatkowo wymagamy, żeby
+                            kierowca miał ukończone 26 lat i posiadał prawo jazdy mi. 5 lat.</p>
+                    </div>
+                    <button class="accordion">Czy poradzę sobie z obsługą kampera?</button>
+                    <div class="panel">
+                        <p>Chcemy żebyście podczas wyjazdu czuli się komfortowo w naszych autach, a obsługa kampera była
+                            prosta i bezproblemowa. Każda osoba wynajmująca kampera przed jego otrzymaniem przechodzi
+                            szczegółowy instruktaż z zakresu zasad użytkowania, obsługi instalacji i przyłączy oraz
+                            komplet informacji niezbędnych do bezpiecznego korzystania z pojazdu.</p>
+                    </div>
+
+                    <button class="accordion">Jak wygląda jazda kameprem?</button>
+                    <div class="panel">
+                        <p>Kamperem jeździ się podobnie jak busem lub dużą osobówka. Trzeba wziąć pod uwagę masę i
+                            gabaryty auta i dostosować prędkość do warunków na drodze. Jazda jest wygodna, gdyż jedziesz
+                            wolniej, siedzisz wyżej i widzisz więcej. Masz czas na odpowiednią reakcję, choć droga
+                            hamowania jest dłuższa. Trudniejsze jest parkowanie. Chociaż auta maja kamery cofania, warto
+                            poprosić drugą osobę o pomoc Ze względu na gabaryty i masę należy unikać wąskich,
+                            jednokierunkowych uliczek</p>
+                    </div>
+
+                    <button class="accordion">Czym jest caravaning?</button>
+                    <div class="panel">
+                        <p>Caravaning to piękna forma turystyki. Wynajem kampera daje wolność, mobilność i elastyczność.
+                            Podróżujesz tam gdzie chcesz i kiedy chcesz, poza utartym szlakiem odkrywasz i poznajesz
+                            nowe miejsca</p>
+                    </div>
+
+                    <button class="accordion">Czy otrzymam zwrot kaucji?</button>
+                    <div class="panel">
+                        <p>Kaucja jest zabezpieczeniem kosztów związanych z naprawą ewentualnych uszkodzeń pojazdu lub
+                            wyposażenia dodatkowego, poniesionych przez Wynajmującego kosztów sprzątnięcia pojazdu,
+                            opróżnienia kasety z nieczystościami oraz uzupełnienie baku z paliwem i/lub gazem w
+                            przypadku oddania auta w innym stanie niż wynikający z umowy. Kaucja rozliczana jest do 14
+                            dni od zakończenia/p>
+                    </div>
+
+                    <button class="accordion">Jakie winiety i opłaty drogowe obowiązują kampery?</button>
+                    <div class="panel">
+                        <p>Kamper jest samochodem zarejestrowanym do 3,5 tony DMC. Oznacza to, iż często koszt winiet
+                            jest taki sam jak dla samochodów osobowych. Opłaty drogowe przy bramkach wjazdowych na
+                            autostrady zależne są od danego kraju. W przypadku przepraw promowych, tuneli i mostów ceny
+                            dla kamperów mogą być wyższe niż dla samochodów osobowych i są głównie uzależnione od
+                            długości i wysokości kampera.
+                            Informacje dotyczące opłat w innych krajach europejskich znajdują się na stronach PZMOT</p>
+
+                    </div>
+
+                    <button class="accordion">Jak szybko można jechać kameprem?</button>
+                    <div class="panel">
+                        <p>Podróżowanie kamperem nie jest szybkie, ale nie o czas chodzi podczas takiego wyjazdu. Ze
+                            względu
+                            na masę i gabaryty kamperem należy jeździć trochę wolniej niż samochodem osobowym.
+                            Rekomendowana
+                            maksymalna prędkość to 100/110 km/h. Warto pamiętać również o wysokości auta. Nie należy
+                            wjeżdżać do garaży, tuneli, bram, itp. o wysokości poniżej 3,3m.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="img/faq.jpeg" class="img-size" alt="faq">
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- ----- footer 1st row ------ -->
+
+    <div class="separator">
+        <div class="custom-shape-divider-top-1638536151">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <section class="footer-top-row">
+        <div class="container">
+            <div class="footer-row">
+
+                <div class="footer-left-col">
+                    <img src="img/logo-kamper-transparent.svg" class="logo-footer" alt="">
+                </div>
+
+                <div class="footer-right-col">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact">
+                            <h4>Tel.</h4>
+                            <p>+48 512 433 433</p>
+                        </div>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact">
+                            <h4>Email</h4>
+                            <p>hello@kamperemwdrodze.pl</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2021 Kamperem w drodze | Polityka Prywatności | Wdrożenie <a
+                    href="https://wiolipcreates.pl/">
+                    WiolipCreates</a></p>
+        </div>
+        <div class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
+
+
+
+    <!-- --- java ----- -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <script>
+        var navList = document.getElementById('navList');
+
+        function showMenu() {
+            navList.style.right = "0";
+        }
+
+        function hideMenu() {
+            navList.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+
+</html>
